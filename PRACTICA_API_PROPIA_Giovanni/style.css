@@ -1,0 +1,73 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.verLibros {
+    display: block; 
+    margin: 0 auto; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    background-color: #2b1d0b; 
+    color: white; 
+    border: none;
+}
+
+.card {
+    background-color: #f7e9df;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px; /* Bordes redondeados */
+    padding: 2rem;
+    transition: all 0.3s ease; /* Suaviza la animación del hover */
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 10px; /* Separación entre tarjetas */
+    max-width: 300px; /* Ancho máximo para que no se estiren demasiado */
+    display: inline-block; /* Para que se pongan una al lado de otra */
+    vertical-align: top;
+}
+
+/* Efecto al pasar el mouse por encima */
+.card:hover {
+    border-color: #2b1d0b;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transform: translateY(-5px); /* Pequeño movimiento hacia arriba */
+}
+
+.card-title {
+    color: #2e1b0b;
+}
+
+#contenedor-libros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.Disponible {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(22, 109, 22);
+    border-radius: 10px;
+    align-self: center;
+    color: rgb(219, 219, 219);
+    font-weight: bold;
+}
+
+.Prestado {
+    text-align: center;
+    padding: 5px 10px;
+    background-color: rgb(214, 118, 29);
+    border-radius: 10px;
+    align-self: center;
+    color: rgb(219, 219, 219);
+    font-weight: bold;
+}

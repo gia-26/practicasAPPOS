@@ -1,0 +1,86 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2.5rem;
+    background-color: #ffffff;
+    color: #222;
+    border-bottom: 1px solid #e5e7eb;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Usuario */
+.header-user {
+    font-size: 0.85rem;
+    color: #6b7280;
+    white-space: nowrap;
+}
+
+/* Título centrado REAL */
+.header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #111827;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+/* Navegación */
+.header-nav a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #2563eb;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #1e40af;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2.5rem; /* MÁS ALTO */
+    background-color: #ffffff;
+    color: #1f2937;
+    border-top: 1px solid #e5e7eb;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Texto izquierdo */
+.footer-copy {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Texto derecho */
+.footer-title {
+    font-size: 0.8rem; /* MÁS GRANDE */
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}

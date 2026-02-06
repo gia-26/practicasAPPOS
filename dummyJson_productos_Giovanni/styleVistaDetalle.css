@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+}
+
+body {
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+    padding: 40px 16px;
+}
+
+.productos {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.productoDetalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+    transition: all 0.2s;
+}
+
+.productoDetalle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+}
+
+.imagenProductoDetalle {
+    width: 35%;
+    border-radius: 14px;
+    object-fit: cover;
+    background: #fafafa;
+}
+
+.nombreProductoDetalle {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descripcionProductoDetalle {
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.precioProductoDetalle {
+    align-self: flex-start;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d8fdd;
+    margin-bottom: 6px;
+}
+
+.marcaProductoDetalle {
+    align-self: flex-start;
+    font-size: 14px;
+    color: #888;
+}
+
+.comentarioDetalle {
+    background: white;
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    transition: transform 0.15s ease;
+}
+
+.comentarioDetalle:hover {
+    transform: scale(1.01);
+}
+
+.usuarioComentarioDetalle {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.textoComentarioDetalle {
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.comentarioDetalle small {
+    color: #999;
+    font-size: 12px;
+}
+
+.btn-regresar {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.btn-regresar:hover {
+    background: #2d8fdd;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-regresar i {
+    font-size: 14px;
+}
+
+.infoExtra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 18px 0;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f2f5f8;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    color: #444;
+    border: 1px solid #e3e6ea;
+    transition: 0.2s ease;
+}
+
+.infoItem:hover {
+    background: #e8f2fb;
+    transform: translateY(-2px);
+}
+
+.botones {
+    
+}

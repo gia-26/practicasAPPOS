@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI';
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.buscar-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Caja del input */
+.buscar-box {
+    position: relative;
+    flex: 1;
+}
+
+/* Input */
+.buscar {
+    width: 85%;
+    padding: 14px 18px 14px 44px;
+    font-size: 0.95rem;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    background-color: #ffffff;
+    color: #111827;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus */
+.buscar:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Icono */
+.buscar-box i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* Botón */
+#agregar-producto {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+/* Hover */
+#agregar-producto:hover {
+    background-color: #1e40af;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+    transform: translateY(-2px);
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #ffffff;
+    border: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.producto:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+.imagenProducto {
+    display: block; 
+    margin: auto;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.nombreProducto {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    padding: 16px 16px 8px 16px;
+    margin: 0;
+}
+
+.precioProducto {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2c3e50;
+    padding: 8px 16px;
+}
+
+.categoriaProducto {
+    font-size: 15px;
+    color: #7f8c8d;
+    letter-spacing: 0.5px;
+    padding: 8px 16px;
+}
+
+.ratingProducto {
+    color: #f39c12;
+    font-size: 15px;
+    padding: 8px 16px;
+}
+
+.stockProducto {
+    font-size: 15px;
+    color: #27ae60;
+    padding: 8px 16px 16px 16px;
+    font-weight: 500;
+}
