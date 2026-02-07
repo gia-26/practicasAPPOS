@@ -43,3 +43,20 @@ fetch(`https://dummyjson.com/products/${id}`)
         })
 
     })
+
+const editar = () => {
+    window.location.href = `./editProduct/editarProducto.html?id=${id}`;
+}
+
+const eliminar = () => {
+    if (!confirm(`¿Estás seguro de que deseas eliminar el producto con ID ${id}?`)) return;
+
+    fetch(`https://dummyjson.com/products/${id}`, {
+        method: 'DELETE'
+    })
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+            alert(`Producto: ${datos.title}, eliminado exitosamente.`);
+            window.location.href = './index.html';
+        })
+}

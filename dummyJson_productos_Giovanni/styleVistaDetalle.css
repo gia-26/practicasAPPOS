@@ -149,6 +149,10 @@ body {
     transform: translateY(-2px);
 }
 
-.botones {
-    
+.btn-eliminar:hover {
+    background-color: #860000;
+}
+
+.btn-editar:hover {
+    background-color: #d6ba3b;
 }

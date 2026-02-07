@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar nuevos productos</title>
+    <title>Editar producto</title>
     <link rel="stylesheet" href="../stylesProducts.css">
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
     <div id="header"></div>
-    <h1>Alta de nuevos productos</h1>
+
+    <h1>Editar producto</h1>
+
+    <input type="hidden" id="id-producto" />
+
     <div class="form-group">
         <label>Nombre del producto: </label>
         <input type="text" id="titulo" placeholder="Nombre del producto..." />
     </div>
+
     <div class="form-group">
         <label>Precio: </label>
         <input type="number" id="precio" placeholder="$0.00" />
     </div>
+
     <div class="form-group">
-        <label>Categoria: </label>
+        <label>Categoría: </label>
         <select id="categoria" name="categoria">
-            <option value="no_selection">Selecciona una categoria</option>
-        </select>
+            <option value="no_selection">Selecciona una categoría</option>
+            </select>
     </div>
 
     <div class="form-group">
         <label>Descripción: </label>
-        <textarea id="descripcion" placeholder="Ingrese una descripcion del producto"></textarea>
+        <textarea id="descripcion" placeholder="Ingrese una descripción del producto"></textarea>
     </div>
 
     <div class="buttons-container">
-        <button class="btn-back" onclick="window.location.href = '../'">
-            ← Come back
+        <button class="btn-back" onclick="history.back()">
+            ← Cancelar
         </button>
 
-        <button onclick="guardarProducto()" class="btn-back">
-            Guardar producto
+        <button onclick="editarProducto()" class="btn-back">
+            Guardar cambios
         </button>
     </div>
-    <div id="mensaje-exito" style=" display: none;"></div>
+
+    <div id="mensaje-exito" style="display: none;"></div>
+    
     <div id="footer"></div>
-    <script src="guardarProducto.js"></script>
+
+    <script src="editarProducto.js"></script>
     <script src="../../pantallas.js"></script>
 </body>
 </html>
