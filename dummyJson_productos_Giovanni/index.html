@@ -12,7 +12,7 @@
     <div id="header"></div>
     <h1 class="titulo">Catálogo de Productos</h1>
     <div class="buscar-container">
-        <select id="select-ordenar" onchange="ordenar()">
+        <select id="select-ordenar" onchange="cargarProductos()">
             <option value="">Selecciona el orden</option>
             <optgroup label="Ordenar por precio">
                 <option value="precio-asc">Menor a Mayor</option>
@@ -23,14 +23,14 @@
                 <option value="titulo-desc">Z a A</option>
             </optgroup>
         </select>
-        <select id="select-categoria" onchange="filtrarPorCategoria()">
+        <select id="select-categoria" onchange="cargarProductos()">
             <option value="">Selecciona el filtro</option>
         </select>
 
         <div class="buscar-box">
             <i class="fas fa-search"></i>
             <input 
-                oninput="buscarProducto()" 
+                oninput="cargarProductos()" 
                 class="buscar" 
                 type="text" 
                 id="buscar" 
@@ -41,6 +41,11 @@
         <a id="agregar-producto" href="./addProduct/add.html">Agregar producto</a>
     </div>
     <div class="productos" id="productos"></div>
+    <div id="paginacion">
+        Página <span id="pagina-actual"></span> de <span id="total-paginas"></span>
+        <button id="anterior" onclick="anterior()">Anterior</button>
+        <button id="siguiente" onclick="siguiente()">Siguiente</button>
+    </div>
     <div id="footer"></div>
     <script src="main.js"></script>
     <script src="../pantallas.js"></script>

@@ -43,8 +43,8 @@ const guardarProducto = () => {
         resultado.style.display = "block";
         resultado.innerHTML = `
             <strong>Producto guardado exitosamente!</strong><br>
-            ID: ${data.id}
-            Título: ${data.title}
+            ID: ${data.id}<br>
+            Título: ${data.title}<br>
             Precio: $${data.price}.00
         `;
     })

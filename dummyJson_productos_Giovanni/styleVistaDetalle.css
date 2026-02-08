@@ -9,15 +9,16 @@ body {
     background: #f5f7fa;
     color: #222;
     line-height: 1.6;
-    padding: 40px 16px;
 }
 
 .productos {
     max-width: 900px;
-    margin: auto;
+    margin: 40px auto;
+    padding: 0 16px;
+
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px;
 }
 
 .productoDetalle {
@@ -98,26 +99,48 @@ body {
     font-size: 12px;
 }
 
-.btn-regresar {
-    align-self: flex-start;
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 32px 0;
+}
+
+.botones button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: white;
-    border: 1px solid #ddd;
-    padding: 10px 16px;
-    border-radius: 12px;
-    cursor: pointer;
+
+    padding: 10px 18px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+
     font-size: 14px;
-    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: all 0.2s;
+    transition: all 0.2s ease;
+}
+
+.botones button:hover {
+    transform: translateY(-2px);
 }
 
 .btn-regresar:hover {
-    background: #2d8fdd;
+    background: #2563eb;
     color: white;
-    transform: translateY(-2px);
+}
+
+.btn-editar:hover {
+    background: #f59e0b;
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background: #dc2626;
+    color: white;
 }
 
 .btn-regresar i {
@@ -147,12 +170,4 @@ body {
 .infoItem:hover {
     background: #e8f2fb;
     transform: translateY(-2px);
-}
-
-.btn-eliminar:hover {
-    background-color: #860000;
-}
-
-.btn-editar:hover {
-    background-color: #d6ba3b;
 }
