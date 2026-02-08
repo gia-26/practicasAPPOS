@@ -47,5 +47,9 @@ const guardarProducto = () => {
             Título: ${data.title}<br>
             Precio: $${data.price}.00
         `;
+        document.getElementById("titulo").value = "";
+        document.getElementById("precio").value = "";
+        document.getElementById("categoria").value = "";
+        document.getElementById("descripcion").value = "";
     })
 }
