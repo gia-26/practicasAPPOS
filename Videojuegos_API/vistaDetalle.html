@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V - GameHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="encabezado-principal nav-detalle">
+        <a href="index.html" class="boton-volver"><i class="fa-solid fa-arrow-left"></i>Volver al catálogo</a>
+    </div>
+
+    <main class="contenedor vista-detalle">
+        <aside class="barra-lateral">
+            <div id="imagen" class="contenedor-imagen"></div>
+            
+            <div class="info-rapida">
+                <div class="caja-puntaje">
+                    <span class="etiqueta-puntaje">Metacritic</span>
+                    <span id="metacritic" class="valor-puntaje"></span>
+                </div>
+
+                <div class="item-info">
+                    <span class="etiqueta">Lanzamiento</span>
+                    <span id="lanzamiento" class="valor"></span>
+                </div>
+                <div class="item-info">
+                    <span class="etiqueta">Duración Media</span>
+                    <span id="duracion" class="valor"></span>
+                </div>
+                <div class="item-info">
+                    <span class="etiqueta">Género</span>
+                    <span id="genero" class="valor"></span>
+                </div>
+            </div>
+
+            <div id="tiendas" class="lista-tiendas"></div>
+        </aside>
+
+        
+        <section class="contenido-detalle">
+            <h1 id="titulo"></h1>
+            
+            <div id="etiquetas" class="nube-etiquetas"></div>
+
+            <div class="seccion-galeria">
+                <h3>Galería</h3>
+                <div id="capturasJuego" class="rejilla-capturas"></div>
+            </div>
+
+            <div class="caja-requisitos">
+                <h3>Requisitos PC</h3>
+                <div class="texto-requisitos">
+                    <p id="requisitosRec"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+
+    <script src="vistaDetalle.js"></script>
+    <script src="../pantallas.js"></script>
+    </body>
+</html>
