@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Cloudinary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Implementación de Almacenamiento Multimedia en la Nube</h1>
+        
+            <!-- Input invisible para capturar el archivo -->
+            <input type="file" id="fileInput" accept="image/*" class="input-hidden" oninput="validarInput()">
+            <label for="fileInput" class="custom-file-upload" id="lblFile">Seleccionar archivo</label>
+            
+            <div class="image-wrapper">
+                <img id="imagen" src="" alt="Imagen cargada desde Cloudinary" style="display: none;">
+            </div>
+            
+            <!-- Botón de acción -->
+            <div class="btns-container">
+                <button id="btnSubir" class="btn btn-blue" onclick="subirimg()">Cargar imagen...</button>
+                <button class="btn btn-red" onclick="nuevaimg()">Nueva imagen</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="loader" class="loader"></div>
+    <div id="footer"></div>
+    
+    <script src="main.js"></script>
+    <script src="../pantallas.js"></script>
+</body>
+</html>
